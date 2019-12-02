@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>be.intecbrussel</groupId>
-    <artifactId>ServletTest_ELIASKHAN</artifactId>
+    <artifactId>ServletTest</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
@@ -26,11 +26,11 @@
                     <container>
                         <containerId>tomee8x</containerId>
                         <type>installed</type>
-                        <home>$TOMCAT_HOME</home>
+                        <home>${env.TOMCAT_HOME}</home>
                     </container>
                     <configuration>
                         <type>existing</type>
-                        <home>$TOMCAT_HOME</home>
+                        <home>${env.TOMCAT_HOME}</home>
                     </configuration>
                 </configuration>
             </plugin>
